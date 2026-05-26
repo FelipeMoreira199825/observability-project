@@ -1,4 +1,4 @@
-﻿# 1. Este é o seu Serviço (A "porta" de entrada para o banco)
+﻿# Serviço e Deployment para o banco de dados PostgreSQL
 apiVersion: v1
 kind: Service
 metadata:
@@ -10,7 +10,6 @@ spec:
   - port: 5432
     targetPort: 5432
 ---
-# 2. Este é o seu Deployment (O "motor" que roda o Postgres)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
